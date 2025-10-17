@@ -114,21 +114,21 @@ ai.addEventListener("click", () => {
 })
 
 
-// Touch
+// Mobile Touch
 
 let startX = 0;
 let startY = 0;
 let endX = 0;
 let endY = 0;
 
-img.addEventListener("touchmove", (e) => e.preventDefault(), {passive: false})
+document.addEventListener("touchmove", (e) => e.preventDefault(), {passive: false})
 
-img.addEventListener("touchstart", (e) => {
+document.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
     startY = e.touches[0].clientY;
 })
 
-img.addEventListener("touchend", (e) => {
+document.addEventListener("touchend", (e) => {
     endX = e.changedTouches[0].clientX;
     endY = e.changedTouches[0].clientY;
 
@@ -148,6 +148,7 @@ function handleSwipe() {
     } else {
         if (diffY > 50) {
             modal.classList.toggle("hidden")
+            document.exitFullscreen()
         } else if (diffY < -50) {
             if (document.fullscreenElement) {
                 document.exitFullscreen()
@@ -155,7 +156,8 @@ function handleSwipe() {
                 document.documentElement.requestFullscreen()
             }
 
-
         }
     }
 }
+
+
