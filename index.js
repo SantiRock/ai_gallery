@@ -123,9 +123,19 @@ let endY = 0;
 
 document.addEventListener("touchmove", (e) => e.preventDefault(), {passive: false})
 
+let lastTouchTime = 0;
+const DOUBLE_TAP_DELAY = 300; 
+
 document.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
     startY = e.touches[0].clientY;
+
+    if (timeDiff < DOUBLE_TAP_DELAY && timeDiff > 0) {
+            imgs.sort(() => Math.random() - 0.5);
+            showImage(0);
+  }
+
+  lastTouchTime = currentTime;
 })
 
 document.addEventListener("touchend", (e) => {
@@ -154,8 +164,8 @@ function handleSwipe() {
                 document.exitFullscreen()
             } else {
                 document.documentElement.requestFullscreen()
+                exitFs.style.display = "none"
             }
-
         }
     }
 }
