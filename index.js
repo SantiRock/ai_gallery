@@ -7,6 +7,7 @@ imgs.sort(() => Math.random() - 0.5)
 //console.log(imgs)
 
 const img = document.getElementById('img')
+const img_c = document.getElementById('img_c')
 const btnPrev = document.getElementById('prev')
 const btnNext = document.getElementById('next')
 const imgContainer = document.getElementById('img_c')
@@ -164,7 +165,7 @@ function handleSwipe() {
                 document.exitFullscreen()
             } else {
                 document.documentElement.requestFullscreen()
-                exitFs.style.display = "none"
+               
             }
         }
     }
@@ -176,7 +177,9 @@ function detectarDispositivo() {
 
   if (esMovil) {
     btnNext.style.display = "none"
-    btnPrev.style.display = "none"    
+    btnPrev.style.display = "none"
+    exitFs.style.display = "none"
+    img_c.style.width = "100%"
   }
 }
 
