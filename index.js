@@ -147,12 +147,15 @@ function handleSwipe() {
         }
     } else {
         if (diffY > 50) {
-            index = 0;
-            showImage(index)
+            modal.classList.toggle("hidden")
         } else if (diffY < -50) {
-            imgs.sort(() => Math.random() - 0.5)
-            index = 0;
-            showImage(index)
+            if (document.fullscreenElement) {
+                document.exitFullscreen()
+            } else {
+                document.documentElement.requestFullscreen()
+            }
+
+
         }
     }
 }
