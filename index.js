@@ -171,3 +171,14 @@ function handleSwipe() {
 }
 
 
+function detectarDispositivo() {
+  const esMovil = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (esMovil) {
+    btnNext.style.display = "none"
+    btnPrev.style.display = "none"    
+  }
+}
+
+detectarDispositivo();
+
