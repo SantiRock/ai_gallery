@@ -179,6 +179,7 @@ function detectarDispositivo() {
     btnNext.style.display = "none"
     btnPrev.style.display = "none"
     exitFs.style.display = "none"
+    exitFs.style.opacity = 0
     img_c.style.width = "100%"
   }
 }
