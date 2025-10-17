@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"  type="image/png" href="./favicon.png" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="AI Gallery" />
+    <meta property="og:description" content="AI images gallery" />
+    <meta property="og:url" content="https:// " />
+    <meta http-equiv="Content-Language" content=" ">
+    <meta name="description" content="AI images gallery">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content=" ">
+    <meta name="author" content="Santiago Quintero Pinto"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <title>AI Gallery</title>
+  </head>
+  <body>
+    <header>
+      <div id="exit_fs" class="exit_fs"><b>X</b></div>
+
+      <div id="nav_btns" class="nav_btns">
+        <div id="ai" class="insts">AI</div>
+        <div id="fs_btn" class="fs_btn">FS</div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div id="modalc" class="modal_container">
+          <p id="mcbtn" class="modal_closebtn"><b>X</b></p>
+          <h1 id="title" class="title">AI Gallery</h1>
+          <p id="text" class="text">Esta galería reúne algunas de las imágenes que he generado con inteligencia artificial durante diversos procesos creativos. Se recomienda el modo fullscreen y navegación con teclado.</p>
+          <p id="cmds" class="cmds"><b>Comandos de teclado :</b></p>
+          <ul>
+            <li id="nav"><b>&larr; &rarr;</b> : navegación</li>
+            <li id="up"><b>&uarr;</b> : entrar  y salir de fullscreen / navegar con flechas de teclado</li>
+            <li id="down"><b>&darr; :</b> abrir y cerrar esta ventana</li>
+            <li id="fullscreen"><b>space</b> : reset galeria / modo random</li>
+            <li id="exitfs"><b>esc</b> : salir de fullscreen</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="container" class="container">
+        <button id="prev" class="btn">&lt;</button>
+        <div id="img_c" class="img">
+            <img src="./img/img_1.jpg" class="img_i" id="img" alt="ai image"/>
+        </div>
+        <button id="next" class="btn">&gt;</button>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <p class="footer">Developed by <a class="art" href="https://www.instagram.com/_a1v8/" target="_blank">Santiago Quintero</a> - © 2025</p>   
+    </footer>
+    
+    <script type="module" src="index.js"></script>
+    <script type="module" src="modal.js"></script>
+
+  </body>
+</html>
