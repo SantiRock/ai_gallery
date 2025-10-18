@@ -73,7 +73,7 @@ function detectarDispositivo() {
   const esMovil = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   if (esMovil) {
-    text.innerHTML = text[lang].mobile
+    text.innerHTML = texts[lang].mobile
     cmds.innerHTML = ""
     list.innerHTML = ""
   }
