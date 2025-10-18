@@ -13,13 +13,9 @@ function detectarDispositivo() {
   const esMovil = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   if (esMovil) {
-    text.innerHTML = "Algunas de las imágenes que he generado con inteligencia artificial en el marco de diferentes procesos creativos.<b>Puedes pasar de imagen con touch.</b>";
+    text.innerHTML = "Algunas de las imágenes que he generado con inteligencia artificial en el marco de diferentes procesos creativos. <b>Recomiendo el modo fullscreen.</b> Puedes pasar de imagen con touch. Hacia arriba entras y sales a modo fullscreen. Hacia abajo se muestra este menu.";
     cmds.innerHTML = ""
-    nav.innerHTML = "Puedes pasar de imagen con touch."
-    up.innerHTML = "Hacia arriba entras y sales a modo fullscreen."
-    down.innerHTML = "Hacia abajo se muestra este menu."
-    fullscreen.innerHTML = ""
-    exitfs.innerHTML=""
+    list.innerHTML = ""
   }
 }
 
