@@ -177,6 +177,7 @@ function detectarDispositivo() {
     btnNext.style.display = "none"
     btnPrev.style.display = "none"
     exitFs.style.display = "none"
+    img_c.style.width = "100%"
 
     img.addEventListener('click', () => {
         imgs.sort(() => Math.random() - 0.5);
