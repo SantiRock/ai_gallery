@@ -59,7 +59,11 @@ footer {
 
 .art2 {
     font-style: italic;
-    color:rgb(0, 0, 0);
+    color:rgb(174, 233, 204);
+}
+
+.aisf {
+    font-size: 12px;
 }
 
 /* Modal */
